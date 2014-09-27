@@ -71,14 +71,12 @@
     <ClInclude Include="Class.h" />
     <ClInclude Include="Cast.h" />
     <ClInclude Include="Const.h" />
-    <ClInclude Include="DefaultCtor.h" />
     <ClInclude Include="DoublePointer.h" />
     <ClInclude Include="FunAddr.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="Array.h" />
     <ClInclude Include="Overload.h" />
     <ClInclude Include="Person.h" />
-    <ClInclude Include="Slicing.h" />
     <ClInclude Include="SList.h" />
     <ClInclude Include="Test.h" />
     <ClInclude Include="Valueness.h" />

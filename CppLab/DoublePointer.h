@@ -13,8 +13,7 @@ void testDoublePointer()
 {
 
 	///--------------------------- Why conversion from int** to const int** is invalid?   -----------------------------------
-	///---																												  ---
-	// --- Note: const int** means pointer to pointer to const int, and either the two pointers are const				  ---
+	// Note: const int** means pointer to pointer to const int, and either the two pointers are const
 	//
 	//
 	//   		ppc ------>	pc -------> i									ppc ---\  pc ----> i
@@ -24,7 +23,7 @@ void testDoublePointer()
 	const int i = 1;
 	const int* pc = &i;
 	const int** ppc = &pc;
-	int* p = 0;
+	int* p = NULL;
 	int** pp = &p;
 
 	/*

@@ -78,7 +78,7 @@ void testConstCast()
 		//char* ptr = s;						// OK, since data pointed by s isn't const
 
 		/*
-		char* const* p1 = &s;
+		char* const* p1 = &s;					// Error. &s is of type "int (*)[4]"
 		char** p2 = const_cast<char**>(p1);
 		*p2 = NULL;
 		*/
@@ -89,10 +89,10 @@ void testConstCast()
 		const char s[] = "abc";				// s is "const char* const";
 		//s[1] = 'c';						// Compile-time error
 
-		const char* p1 = const_cast<const char*>(s);	// Cast 2nd const away, e.g., const char*
+		const char* p1 = const_cast<const char*>(s);
 		char* const p2 = const_cast<char* const>(s);
 		char* p3 = const_cast<char*>(s);
-		p3[1] = 'c';							// Success
+		p3[1] = 'c';
 	}
 
 	/// Exception to case 1
