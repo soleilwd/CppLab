@@ -9,6 +9,8 @@ int main(int argc, char* argv[])
 {
 	using namespace std;
 
+	testDefaultInitialisation();
+
 	vector<int> v0;
 	v0.reserve(8);
 	v0.push_back(1);
