@@ -1,7 +1,12 @@
 
+HEADERS := $(wildcard CppLab/*.h)
+SOURCES := $(wildcard CppLab/*.cpp)
+
 all : Main
 
-Main : CppLab/Main.cpp
+Main : $(HEADERS) $(SOURCES) 
+#	echo $(HEADERS)
+#	echo $(SOURCES)
 	g++ -Wall -g -o Main CppLab/Main.cpp
 
 clean:
